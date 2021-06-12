@@ -11,4 +11,4 @@ const connection = new Sequelize(config.database, config.username, config.passwo
 
 const newUsers = userRegistrationsModel(connection, Sequelize)
 
-module.exports = { newUsers }
+module.exports = { }

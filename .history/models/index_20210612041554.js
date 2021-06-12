@@ -9,6 +9,4 @@ const connection = new Sequelize(config.database, config.username, config.passwo
   host: config.host, dialect: config.dialect,
 })
 
-const newUsers = userRegistrationsModel(connection, Sequelize)
-
-module.exports = { newUsers }
+const userRegistrationsMo
