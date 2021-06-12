@@ -1,7 +1,6 @@
 import models from '../models'
 
-// eslint-disable-next-line import/prefer-default-export
-export const saveNewUser = async (req, res) => {
+export  saveNewUser = async (req, res) => {
   const {
     nameFirst, nameLast, NPI, teleNumber, email,
   } = req.body
@@ -16,3 +15,4 @@ export const saveNewUser = async (req, res) => {
 
   return res.status(201).send(newUser)
 }
+
