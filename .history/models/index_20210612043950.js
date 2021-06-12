@@ -1,7 +1,8 @@
 import Sequelize from 'sequelize'
 import allConfigs from '../configs/sequelize'
 
-import userRegistrationModel from './userRegistrations'
+const userRegistrationModel = require('./userRegistrations')
+
 
 const environment = process.env.NODE_ENV ? process.env.NODE_ENV : 'development'
 const config = allConfigs[environment]
@@ -9,6 +10,6 @@ const connection = new Sequelize(config.database, config.username, config.passwo
   host: config.host, dialect: config.dialect,
 })
 
-const NewUsers = userRegistrationModel(connection, Sequelize)
+const ewUsers = userRegistrationModel(connection, Sequelize)
 
-export default { NewUsers }
+export default { newUsers }

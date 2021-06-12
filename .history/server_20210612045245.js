@@ -1,7 +1,7 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import path from 'path'
-import { saveNewUser } from './controllers/userRegistrations'
+import { saveNewUser } from './controllers/userRegistrations.'
 
 const app = express()
 

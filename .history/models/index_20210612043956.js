@@ -1,7 +1,8 @@
 import Sequelize from 'sequelize'
 import allConfigs from '../configs/sequelize'
 
-import userRegistrationModel from './userRegistrations'
+const userRegistrationModel = require('./userRegistrations')
+
 
 const environment = process.env.NODE_ENV ? process.env.NODE_ENV : 'development'
 const config = allConfigs[environment]
