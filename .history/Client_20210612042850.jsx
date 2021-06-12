@@ -3,6 +3,6 @@ import { render } from 'react-dom'
 
 
 render(
-  <div>Provider User Registration Form</div>,
+  <div></div>,
   document.getElementById('root'),
 )

@@ -1,5 +1,5 @@
 node_modules
-.env
+env
 #Ignore Webpack Config File,
 public,
 bundle.js
