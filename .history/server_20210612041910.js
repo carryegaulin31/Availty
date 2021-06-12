@@ -1,7 +1,7 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import path from 'path'
-import { saveNewUser } from './controllers/userRegistrations'
+import { saveNewUser } from '../'
 const app = express()
 
 app.use(express.static('public'))
@@ -14,5 +14,3 @@ app.all('*', (request, response) => response.sendFile(path.resolve(__dirname, 'p
 
 app.listen(1337, () => {
   console.log('Listening on port 1337...')
-})
-
