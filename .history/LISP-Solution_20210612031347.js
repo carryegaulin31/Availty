@@ -22,7 +22,6 @@
     return newArray.length === 0
 }
 
-
 console.log(parenthesisChecker('(((hannah)))'))
 console.log(parenthesisChecker('(han(hannah)nah)'))
 console.log(parenthesisChecker('(((kadfhk)))'))
