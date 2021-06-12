@@ -4,7 +4,7 @@ export default UserRegistrations = (connection, Sequelize) => {
         nameFirst: { type: Sequelize.STRING, allowNull: false },
         nameLast: { type: Sequelize.STRING, allowNull: false },
         NPI: { type: Sequelize.INTEGER, allowNull: false },
-        teleNumber: { type: Sequelize.STRING, allowNull: false },
+        TeleNumber: { type: Sequelize.STRING, allowNull: false },
         email: { type: Sequelize.STRING, allowNull: false },
     })
 }

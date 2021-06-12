@@ -11,5 +11,3 @@ const saveNewUser = async(req, res) => {
 
     return res.status(201).send(newUser)
 }
-
-module.exports = { saveNewUser }

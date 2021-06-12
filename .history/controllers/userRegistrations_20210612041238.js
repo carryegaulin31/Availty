@@ -8,8 +8,4 @@ const saveNewUser = async(req, res) => {
     }
 
     const newUser = await models.userRegistrations.create({ nameFirst, nameLast, NPI, teleNumber, email })
-
-    return res.status(201).send(newUser)
 }
-
-module.exports = { saveNewUser }
