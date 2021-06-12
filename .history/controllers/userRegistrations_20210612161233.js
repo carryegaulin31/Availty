@@ -4,18 +4,17 @@ export const getProviderByLastName = async (req, res) => {
   const { identifier } = req.params
 
   const provider = await models.userRegistrations.findAll({
-    attributes: ['id', 'nameFirst', 'nameLast', 'NPI', 'teleNumber', 'email'],
-    where: {
+    where: { 
       [models.Sequelize.Op.or]: [
         { id: identifier },
-        { nameLast: { [models.Sequelize.Op.like]: `%${identifier}% ` } },
+        { nameLast: { [models.Sequelize.Op.like]: `%${identifier}% `} },
       ],
-    },
+    }
   })
 
   return provider
-    ? res.send(provider)
-    : res.sendStatus(404)
+  ? response.send(provider)
+  : res.sendStaus
 }
 // eslint-disable-next-line import/prefer-default-export
 export const saveNewUser = async (req, res) => {

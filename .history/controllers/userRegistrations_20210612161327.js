@@ -4,7 +4,7 @@ export const getProviderByLastName = async (req, res) => {
   const { identifier } = req.params
 
   const provider = await models.userRegistrations.findAll({
-    attributes: ['id', 'nameFirst', 'nameLast', 'NPI', 'teleNumber', 'email'],
+    attributes: ['id', 'nameFirst', 'nameLast']
     where: {
       [models.Sequelize.Op.or]: [
         { id: identifier },
