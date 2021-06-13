@@ -56,7 +56,7 @@ export default () => {
             value={email}
             onChange={event => setEmail(event.target.value)}
           />
-          <button type="button" name="submit" id="btn" value="submit" onClick={Submit}>Submit</button>
+          <button type="button" name="submit" id="btn"onClick={Submit}>Submit</button>
         </div>
       </div>
     </div>
