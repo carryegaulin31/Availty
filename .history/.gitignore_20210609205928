@@ -1,5 +1,0 @@
-ode_modules
-#Ignore Webpack Config File,
-,
-public,
-bundle.js

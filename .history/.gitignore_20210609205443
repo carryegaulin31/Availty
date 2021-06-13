@@ -1,4 +1,0 @@
-#Ignore Webpack Config File,
-node_modules,
-public,
-bundle.js

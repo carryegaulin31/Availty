@@ -1,3 +1,0 @@
-const userRegistrations = (connection, Sequelize) => {
-    
-}

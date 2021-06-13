@@ -1,1 +1,0 @@
-const userRegistrations = (connection, Sequelize
