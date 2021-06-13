@@ -8,12 +8,12 @@ div.container {
 div.main {
     width: 300px;
 padding: 10px 50px 10px;
-margin: 60px;
+margin: 70px;
 border: 2px solid gray;
 border-radius: 10px;
 font-family: raleway;
 position: absolute;
-margin-top:40px;
+margin-top:60px;
 }
 
 input {

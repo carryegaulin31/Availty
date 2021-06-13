@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Page = styled.div`
   margin: 50px auto 0;
   text-align: center;
-  width: 50%;
+  width: 70%;
   background-color: floralwhite;
 `
 

@@ -11,5 +11,5 @@ display: block;
 `
 export default () => (
 
-  <Img src="https://www.availity.com/favicon.ico" alt="logo" className="w3-display-left" />
+  <Img src="/" alt="logo" className="w3-display-left" />
 )

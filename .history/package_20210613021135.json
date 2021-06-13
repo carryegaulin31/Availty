@@ -2,7 +2,7 @@
   "name": "react-boiler-plate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".js",
   "scripts": {
     "dev": "./node_modules/.bin/concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "dev:client": "./node_modules/.bin/webpack --progress --config webpack.dev.js",

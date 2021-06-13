@@ -9,13 +9,10 @@ export default () => {
 
   const Submit = () => {
 
-  }
 
-  setNameFirst('')
-  setNameLast('')
-  setNPI('')
-  setTeleNumber('')
-  setEmail('')
+    setNameFirst('')
+    set
+  }
 
   return (
     <div className="container">

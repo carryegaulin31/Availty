@@ -8,14 +8,12 @@ export default () => {
   const [email, setEmail] = useState('')
 
   const Submit = () => {
-
+    setNameFirst('')
+    setNameLast('')
+    setNPI('')
+    setTeleNumber('')
+    setEmail('')
   }
-
-  setNameFirst('')
-  setNameLast('')
-  setNPI('')
-  setTeleNumber('')
-  setEmail('')
 
   return (
     <div className="container">

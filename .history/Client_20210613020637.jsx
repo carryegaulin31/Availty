@@ -4,6 +4,6 @@ import { render } from 'react-dom'
 import UserRegForm from './pages/UserRegForm'
 
 render(
-  <UserRegForm />,
+ <UserRegForm />
   document.getElementById('root'),
 )

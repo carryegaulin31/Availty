@@ -21,9 +21,9 @@ module.exports = {
       exclude: /node_modules/,
     }],
   },
-  // plugins: [
-  //   new webpack.DefinePlugin({
-  //     API_BASE_URL: JSON.stringify('http://localhost:1337/api'),
-  //   }),
-  // ],
+  plugins: [
+    new webpack.DefinePlugin({
+      API_BASE_URL: JSON.stringify('http://localhost:1337/api'),
+    }),
+  ],
 }
