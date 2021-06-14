@@ -11,11 +11,11 @@ export default () => {
 
   }
 
-  setNameFirst('')
-  setNameLast('')
-  setNPI('')
-  setTeleNumber('')
-  setEmail('')
+  // setNameFirst('')
+  // setNameLast('')
+  // setNPI('')
+  // setTeleNumber('')
+  // setEmail('')
 
   return (
     <div className="container">

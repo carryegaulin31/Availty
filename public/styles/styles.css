@@ -1,15 +1,16 @@
 div.container {
-    width: 500px;
+    width: 900px;
     height: 610px;
-    margin: 45px auto;
+    margin: 50px auto;
+    position: absolute;
     font-family: 'Raleway', sans-serif;  
 }
 
 div.main {
-    width: 300px;
+    width: 400px;
 padding: 10px 50px 10px;
-margin: 60px;
-border: 2px solid gray;
+margin: 50px;
+border: 3px solid gray;
 border-radius: 10px;
 font-family: raleway;
 position: absolute;
