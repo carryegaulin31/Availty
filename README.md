@@ -1,25 +1,47 @@
-Availity’s Fullstack Homework Assignment
-
-We highly recommend that you use one of the free source code management platforms (GitHub, GitLab or BitBucket) when storing your code.  Once you are ready for us to look at your answers, send us the link to your code.  If you have any questions about the homework, please do not hesitate to ask.
-
-1.	Tell me about your proudest professional achievement.  It can also be a personal or school project.  
-2.	Tell me about something you have read recently that you would recommend and why. (Can be a Github Repo, Article, Blog, Book, etc) 
-3.	How would you explain what Availity does to your grandmother? 
-4.	Coding exercise: You are tasked to write a checker that validates the parentheses of a LISP code.  Write a program (in Java or JavaScript) which takes in a string as an input and returns true if all the parentheses in the string are properly closed and nested.
-5.	Coding exercise:   For frontend engineer: Healthcare providers request to be part of the Availity system.  Using a modern JavaScript framework (React preferred, or Vue or Angular), create a registration user interface so healthcare providers can electronically join Availity.  The following data points should be collected:
+##	Coding exercise:   For frontend engineer: Healthcare providers request to be part of the Availity system.  Using a modern JavaScript framework (React preferred, or Vue or Angular), create a registration user interface so healthcare providers can electronically join Availity.  The following data points should be collected:
 •	First Name
 •	Last Name
 •	NPI number
 •	Business Address
 •	Telephone Number
 •	Email address
-6.	Coding exercise:  Availity receives enrollment files from various benefits management and enrollment solutions (I.e. HR platforms, payroll platforms).  Most of these files are typically in EDI format.  However, there are some files in CSV format.  For the files in CSV format, write a program that will read the content of the file and separate enrollees by insurance company in its own file. Additionally, sort the contents of each file by last and first name (ascending).  Lastly, if there are duplicate User Ids for the same Insurance Company, then only the record with the highest version should be included. The following data points are included in the file:
-•	User Id (string)
-•	First Name (string) 
-•	Last Name (string)
-•	Version (integer)
-•	Insurance Company (string)
 
-Again, please let us know if you have any questions. Thanks! 
 
--Availity Team 
+## GET http://localhost:1337/api/users/pepp
+The table is set up to search providers by last name...even if you only get close to the correct spelling
+
+## RESPONSE:
+{
+"id":2,
+"nameFirst":"Chili",
+"nameLast":"Pepper",
+"NPI":1,
+"teleNumber":"3103967825",
+"email":"drpepper@gmail.com"
+}
+
+## POST  http://localhost:1337/api/users/
+The table is set up to accept new users in this structure:
+
+{
+    "nameFirst":"Carrye",
+    "nameLast":"Gaulin",
+    "NPI":3,
+    "teleNumber":"9103367845",
+    "email":"carryegaulin111@gmail.com"
+}
+
+## RESPONSE:
+
+{
+    "id": null,
+    "nameFirst": "Carrye",
+    "nameLast": "Gaulin",
+    "NPI": "31",
+    "teleNumber": "9103367845",
+    "email": "carryegaulin033178@gmail.com",
+    "updatedAt": "2021-06-15T07:23:15.811Z",
+    "createdAt": "2021-06-15T07:23:15.811Z"
+}
+
+Unfortunately I have some sort of bug going on with my computer and it took up alot of time and stopped me here.  Finally got some of the front working that Client doesn't seem to want to run bu itself or concurrently with the server.
